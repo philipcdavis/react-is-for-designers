@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import MailchimpSubscribe from "react-mailchimp-subscribe"
+import MailchimpSubscribe from "react-mailchimp-subscribe";
+import {Button, Input} from './styled'
 
 // a basic form
 const CustomForm = ({ status, message, onValidated }) => {
@@ -27,14 +28,14 @@ const CustomForm = ({ status, message, onValidated }) => {
         />
       )}
       <br />
-      <input
+      <Input
         ref={node => (email = node)}
         type="email"
         placeholder="Your email"
       />
-      <button onClick={submit}>
+      <Button onClick={submit}>
         Submit
-      </button>
+      </Button>
     </div>
   );
 };
