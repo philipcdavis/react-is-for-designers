@@ -1,62 +1,35 @@
 import React, { Component } from 'react';
-import MailchimpSubscribe from "react-mailchimp-subscribe";
-import {Button, Input} from './styled'
+import {Input, RainbowButton} from './styled'
+import {Box, Flex} from 'rebass'
 
-// a basic form
-const CustomForm = ({ status, message, onValidated }) => {
-  let email;
-  const submit = () =>
-    email &&
-    email.value.indexOf("@") > -1 &&
-    onValidated({
-      EMAIL: email.value
-    });
 
-  return (
-    <div>
-      {status === "sending" && <div style={{ color: "blue" }}>sending...</div>}
-      {status === "error" && (
-        <div
-          style={{ color: "purple" }}
-          dangerouslySetInnerHTML={{ __html: message }}
-        />
-      )}
-      {status === "success" && (
-        <div
-          style={{ color: "green" }}
-          dangerouslySetInnerHTML={{ __html: message }}
-        />
-      )}
-      <br />
-      <Input
-        ref={node => (email = node)}
-        type="email"
-        placeholder="Your email"
-      />
-      <Button onClick={submit}>
-        Submit
-      </Button>
-    </div>
-  );
-};
+
+const url = "https://twitter.us18.list-manage.com/subscribe/post?u=4b8048aee994b838162f80e3a&amp;id=21229251bb";
 
 class SignupForm extends Component {
   render() {
-    const url =
-      "https://twitter.us18.list-manage.com/subscribe/post?u=4b8048aee994b838162f80e3a&amp;id=21229251bb";
     return (
-      <div>
-        <MailchimpSubscribe
-          url={url}
-          render={({ subscribe, status, message }) => (
-            <CustomForm
-              status={status}
-              message={message}
-              onValidated={formData => subscribe(formData)}
-            />
-          )}
-        />
+      <div id="mc_embed_signup">
+        <form action="https://twitter.us18.list-manage.com/subscribe/post?u=4b8048aee994b838162f80e3a&amp;id=21229251bb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
+          <Flex id="mc_embed_signup_scroll">
+            <Box className="mc-field-group flex-auto">
+            	<Input type="email" name="EMAIL" className="required email" id="mce-EMAIL" />
+            </Box>
+          	<span id="mce-responses" className="clear">
+          		<div className="response" id="mce-error-response" style={{display:"none"}}></div>
+          		<div className="response" id="mce-success-response" style={{display:"none"}}></div>
+          	</span>
+
+            <div style={{position: "absolute", left: -5000}} aria-hidden="true">
+              <input type="text" name="b_4b8048aee994b838162f80e3a_21229251bb" tabIndex="-1" value="" />
+            </div>
+            <Box className="clear">
+              <RainbowButton type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="button" />
+            </Box>
+          </Flex>
+        </form>
       </div>
+
     );
   }
 }

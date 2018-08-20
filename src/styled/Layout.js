@@ -1,10 +1,14 @@
 import styled from 'styled-components';
+import { colorChange } from "./utils";
 
 export const LineBreak = styled.hr`
   width: 50%;
-  border: 1px solid #222;
+  border: 1px solid #fff;
   margin-top: 10%;
   margin-bottom: 10%;
   opacity: 0.2;
-  animation: borderColorChange 20s infinite alternate;
 `;
+
+export const RainbowBreak = LineBreak.extend`
+  animation: ${colorChange("border-color")} 20s infinite alternate;
+`

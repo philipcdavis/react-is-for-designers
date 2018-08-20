@@ -1,12 +1,14 @@
-import Button from './Button';
+import Button, { RainbowButton } from './Button';
 import Input from './Input';
 import { MarkdownStyles, RainbowType } from './Type';
-import { LineBreak } from './Layout'
+import { LineBreak, RainbowBreak } from './Layout';
 
 export {
   Button,
+  RainbowButton,
   Input,
   MarkdownStyles,
   RainbowType,
-  LineBreak
+  LineBreak,
+  RainbowBreak
 }

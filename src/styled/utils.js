@@ -1,3 +1,5 @@
+import { keyframes } from "styled-components";
+
 export const color = {
   blue: '#0099FF',
   red: '#FF4D4D',
@@ -9,4 +11,14 @@ export const color = {
   gray2: '',
   gray3: '',
   gray4: '',
+}
+
+export function colorChange(type) {
+  return keyframes`
+    0% { ${type}: #F04DFF; }
+    25%  { ${type}: #FF4D4D; }
+    50% { ${type}: #FFC54D; }
+    75% { ${type}: #6AED76; }
+    100% { ${type}: #6AC4ED; }
+  `
 }

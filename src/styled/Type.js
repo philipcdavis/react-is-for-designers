@@ -1,15 +1,8 @@
-import styled, { css, keyframes } from "styled-components";
-
-const colorChange = keyframes`
-  0% { color: #F04DFF; }
-  25%  { color: #FF4D4D; }
-  50% { color: #FFC54D; }
-  75% { color: #6AED76; }
-  100% { color: #6AC4ED; }
-`
+import styled, { css } from "styled-components";
+import { colorChange } from "./utils";
 
 export const RainbowType = styled.span`
-  animation: ${colorChange} 20s infinite alternate;
+  animation: ${colorChange("color")} 20s infinite alternate;
 `
 
 export const MarkdownStyles = styled.div`
