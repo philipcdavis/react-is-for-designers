@@ -2,7 +2,7 @@
   "name": "website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://philipcdavis.com/react-is-for-designers",
+  "homepage": "https://philipcdavis.github.io/react-is-for-designers",
   "dependencies": {
     "basscss": "8.0.2",
     "gh-pages": "^1.2.0",
