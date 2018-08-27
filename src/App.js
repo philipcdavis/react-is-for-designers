@@ -4,6 +4,9 @@ import SignupForm from './SignupForm';
 import Post from './Post';
 import Logo from './Logo';
 import {Heading, Box} from 'rebass';
+import ReactGA from 'react-ga';
+ReactGA.initialize('UA-51640724-1');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 injectGlobal`
   * { box-sizing: border-box; }

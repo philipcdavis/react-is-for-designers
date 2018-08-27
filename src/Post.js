@@ -35,7 +35,7 @@ The actual React API isn't that long, and it shouldn't take more the 2 hours to 
           <Heading textAlign={["left", "center"]} fontSize="2rem" mb={3}>Learn how to use React for design work</Heading>
         </RainbowType>
         <Text textAlign={["left", "center"]}>
-        {`You don't need to know everything about web development to get get a lot out of React. I'm going to be creating resources to help designers learn the parts of react that are relevant for their work. If you're a designer interested in using React you should follow along!`}
+        {`You don't need to know everything about web development to get get a lot out of React. I'm going to be creating resources to help designers learn the parts of react that are relevant for their work. If you're a designer interested in using React you should follow along.`}
         </Text>
       </Box>
     );
