@@ -9,6 +9,8 @@ const Input = styled.input`
   color: white;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
   transition: 0.1s all ease;
   border: 2px solid transparent;
   border-right: 0;
