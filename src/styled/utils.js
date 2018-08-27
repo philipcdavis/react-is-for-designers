@@ -22,3 +22,14 @@ export function colorChange(type) {
     100% { ${type}: #6AC4ED; }
   `
 }
+
+export function pulse() {
+  return keyframes`
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.3;
+    }
+  `
+}

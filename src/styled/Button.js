@@ -1,15 +1,15 @@
 import styled from 'styled-components';
-import { colorChange } from "./utils";
+import { colorChange, pulse } from "./utils";
 
 const Button = styled.button`
   padding: 17px 30px;
   font-size: 17px;
   color: #222;
+  outline: none;
   border: none;
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border-radius: 4px;
   font-weight: bold;
-  background-color: #eee;
+  animation: ${colorChange("background")} 20s infinite alternate;
   transition: 0.2s all ease;
 
   &:hover {
@@ -25,10 +25,10 @@ const Button = styled.button`
   }
 `
 
-const ButtonInput = Button.withComponent('input')
-
-export const RainbowButton = ButtonInput.extend`
-  animation: ${colorChange("background")} 20s infinite alternate;
-`
+export const ButtonInput = Button.withComponent('input').extend`
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  -webkit-appearance: none;
+`;
 
 export default Button;
