@@ -27,7 +27,7 @@ Manual setup and configuration of React projects can stop you  from ever getting
 You don't need to create an entire web app. Try building small design components with multiple states, slimmed down design systems, or simple data visualizations.
 
 ## 2. Read the React docs all the way through
-The actual React API isn't that long, and it shouldn't take more the 2 hours to read it all. Read it once, all the way through. Don't worry if you don't understand what everything means. It's good to have a high level overview of what react is doing and what types of things are in the library.
+The actual React API isn't that long, and it shouldn't take more the 2 hours to read it all. Read it once, all the way through. Don't worry if you don't understand what everything means. It's good to have a high level overview of what React is doing and what types of things are in the library.
 
 You can pick up React faster than you think. Find someone who knows React and ask them lots of questions. If you'd like you can also [reach out](https://twitter.com/philipcdavis) to me. I'm happy to be a resource.
 `}
@@ -39,7 +39,7 @@ You can pick up React faster than you think. Find someone who knows React and as
           <Heading textAlign={["left", "center"]} fontSize="2rem" mb={3}>Learn how to use React for design work</Heading>
         </RainbowType>
         <Text textAlign={["left", "center"]}>
-        {`You don't need to know everything about web development to get get a lot out of React. I'm going to be creating resources to help designers learn the parts of react that are relevant for their work. If you're a designer interested in using React you should follow along.`}
+        {`You don't need to know everything about web development to get get a lot out of React. I'm going to be creating resources to help designers learn the parts of React that are relevant for their work. If you're a designer interested in using React you should follow along.`}
         </Text>
       </Box>
     );
