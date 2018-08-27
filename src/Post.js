@@ -13,9 +13,11 @@ class Post extends Component {
       <Box>
       <MarkdownStyles>
         <Markdown>{`
-React is a powerful design tool. There's a lot you can do with React that would be difficult with a traditional design application. Prototyping with live data, creating complex interactive experiences, and creating component libraries for designers & developers. React opens up many ways of designing that were previously difficult or totally inaccessible.
+React is a powerful design tool. There's a lot you can do with React that would be difficult with a traditional design application. Things like prototyping with live data, creating complex interactive experiences, and creating shared component libraries are the tip of the iceburg. React opens up many ways of designing that were previously difficult or totally inaccessible.
 
-If you are a designer interested in learning React, but don't know how to get started, here is what I would recommend:
+The landscape of design tools are changing. React opens up entirely new ways of designing interfaces and the systems that support them.
+
+There's a lot of information out there on how to learn React. Here are my two cents:
 
 ## 1. Scaffold a project and build something simple
 Avoid any method of learning React that doesn't have you spending most of your time coding.
@@ -26,6 +28,8 @@ You don't need to create an entire web app. Try building small design components
 
 ## 2. Read the React docs all the way through
 The actual React API isn't that long, and it shouldn't take more the 2 hours to read it all. Read it once, all the way through. Don't worry if you don't understand what everything means. It's good to have a high level overview of what react is doing and what types of things are in the library.
+
+You can pick up React faster than you think. Find someone who knows React and ask them lots of questions. If you'd like you can also [reach out](https://twitter.com/philipcdavis) to me. I'm happy to be a resource.
 `}
           </Markdown>
         </MarkdownStyles>
