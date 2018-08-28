@@ -13,23 +13,21 @@ class Post extends Component {
       <Box>
       <MarkdownStyles>
         <Markdown>{`
-React is a powerful design tool. There's a lot you can do with React that would be difficult with a traditional design application. You can prototype with live data, create complex interactive experiences, and build shared component libraries. React opens up many ways of designing that were previously difficult or totally inaccessible.
+React is a powerful design tool. There's a lot you can do with React that would be difficult with a traditional design application. Prototyping with realistic data sets, creating complex interactions and shared component libraries are just the tip of the iceberg. React opens up new ways of designing interfaces and the systems that support them.
 
-The landscape of design tools are changing. React opens up new ways of designing interfaces and the systems that support them.
-
-There's a lot of information out there on how to learn React. Here are my two cents:
+There's a lot of good information out there on how to learn React. If you're looking to get started, here are my two cents:
 
 ## 1. Scaffold a project and build something simple
 Avoid any method of learning React that doesn't have you spending most of your time coding.
 
-Manual setup and configuration of React projects can stop you  from ever getting started. I would use [create-react-app](https://github.com/facebook/create-react-app) to scaffold your projects at first. If you don't know how to use the terminal, don't be afraid to open it up and learn a few commands.
+Manual setup and configuration of React projects can stop you  from ever getting started. I would use [create-react-app](https://github.com/facebook/create-react-app) to scaffold your projects at first.
 
 You don't need to create an entire web app. Try building small design components with multiple states, slimmed down design systems, or simple data visualizations.
 
 ## 2. Read the React docs all the way through
-The actual React API isn't that long, and it shouldn't take more the 2 hours to read it all. Read it once, all the way through. Don't worry if you don't understand what everything means. It's good to have a high level overview of what react is doing and what types of things are in the library.
+The [React documentation](https://reactjs.org/docs/getting-started.html) isn't that long, and it shouldn't take more the 2 hours to read it all. Read it once, all the way through. Don't worry if you don't understand what everything means. It's good to have a high level overview of what react is doing and what types of things are in the library.
 
-You can pick up React faster than you think. Find someone who knows React and ask them lots of questions. If you'd like you can also [reach out](https://twitter.com/philipcdavis) to me. I'm happy to be a resource.
+You can pick up React faster than you think. Find someone who knows React and ask them lots of questions. If there's anything I can do to help feel free to [reach out](https://twitter.com/philipcdavis).
 `}
           </Markdown>
         </MarkdownStyles>
